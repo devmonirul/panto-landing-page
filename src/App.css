@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #E58411;
+  --color-secondary: #1E1E1E;
+  --color-secondary-bg: #f7f7f7;
+
+  --font-poppins: 'Poppins', sans-serif;
+}
+.section_container {
+  @apply max-w-screen-2xl container mx-auto py-6 px-4;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply px-4 py-2 ring-1 text-primary ring-primary hover:bg-primary rounded-full bg-white text-lg;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  @apply text-white bg-primary;
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  @apply fill-primary text-primary;
+}
+.swiper-button-prev:hover svg,
+.swiper-button-next:hover svg {
+  @apply fill-white text-white;
+}
+
+.dark {
+  @apply bg-gray-900 text-white;
+}
